@@ -1,0 +1,12 @@
+ Volume in drive C has no label.
+ Volume Serial Number is DCA9-7717
+
+ Directory of C:\Users\Dell\Desktop\Java
+
+04/11/2019  10:29 PM    <DIR>          .
+04/11/2019  10:29 PM    <DIR>          ..
+04/11/2019  09:40 PM               683 Hello.class
+04/11/2019  09:22 PM               153 Hello.java
+04/11/2019  10:29 PM                 0 tirth.txt
+               3 File(s)            836 bytes
+               2 Dir(s)  68,004,839,424 bytes free
