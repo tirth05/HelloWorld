@@ -1,0 +1,6 @@
+git init 
+git add .
+git status
+git commit -m "file added"
+git remote add origin https://github.com/tirth05/HelloWorld.git
+git push -u origin master
