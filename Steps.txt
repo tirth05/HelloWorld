@@ -4,3 +4,5 @@ git status
 git commit -m "file added"
 git remote add origin https://github.com/tirth05/HelloWorld.git
 git push -u origin master
+git config --global user.email "tirthjoshi69@gmail.com"
+git config --global user.name "tirth05"
