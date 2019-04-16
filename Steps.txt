@@ -9,3 +9,6 @@ git config --global user.name "TirthJoshi"
 git log
 git --help
 git branch "branchname"
+git merge "Branchname"
+git branch -d "branchname" ---> Delete branch from Local
+git push origin --delete "branchname" -->Delete from Remote
