@@ -8,3 +8,4 @@ git config --global user.email "tirthjoshi69@gmail.com"
 git config --global user.name "TirthJoshi"
 git log
 git --help
+git branch "branchname"
