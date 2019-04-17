@@ -12,3 +12,5 @@ git branch "branchname"
 git merge "Branchname"
 git branch -d "branchname" ---> Delete branch from Local
 git push origin --delete "branchname" -->Delete from Remote
+
+To send email from Git --> Setting -> Notification -> Set email address
