@@ -69,3 +69,6 @@ It is so modular that we can solve the problem at any time.
     	}
 	}
 	--> bat for win and sh for linux
+	
+--> To take the backup of the Jenkins either use .jenkins folder or use thinbackup plugins.
+--> Jenkins home directory is .jenkins.
