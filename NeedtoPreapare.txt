@@ -1,0 +1,9 @@
+Jenkins
+Git
+Docker
+Shell Scripting
+Kubernetes
+Swarm
+Ansible and terraform basics
+Openshift Basic
+Grafana and Promethus Basic
