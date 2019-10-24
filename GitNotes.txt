@@ -1,0 +1,17 @@
+--> How to install Git on ubuntu
+Use commands given on official website in linux terminal.
+--> git --version
+--> git config --global user.name "tirth05"
+--> git config --global user.email "emailid"
+--> git config --list
+--> ls -a : to list all files
+--> clone "repo name"
+--> gedit : to open the file
+--> To get the status of your repositery
+	git status 
+--> git add file_name : to add file in git
+--> git commit -m "Comment" file_name   -  it will not refelct in git hub account, for that u have to push that file
+--> git push -u origin master
+--> git init : to initialize the git repository
+--> git remote add origin
+--> 
