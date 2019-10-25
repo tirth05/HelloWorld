@@ -72,3 +72,12 @@ It is so modular that we can solve the problem at any time.
 	
 --> To take the backup of the Jenkins either use .jenkins folder or use thinbackup plugins.
 --> Jenkins home directory is .jenkins.
+--> You can also take the Jenkinsfile from the Githu..is more easy way.
+--> for that Jenkins file should in root folder.
+
+
+==> Master slave
+	--> There is requirement that 
+	--> windoes or linux can be
+	--> Slave can be connect either using WinStart or SSH.
+	--> You need to provide a path for 
