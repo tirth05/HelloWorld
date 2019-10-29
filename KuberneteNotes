@@ -36,4 +36,6 @@
     Replica Set use equity based selectors : It allow the filteing by labelkey and value
     Replication Controller use Selector based selectors : In this allow the filtering keys according to set of values.
 --> Headless Service : It is a normal Service withot the clster ip and ypu can directly reach to the pods withot the need to access throgh a proxy
+--> Fedrated Cluster : Multiple kubernete cluster can be created and managed toagather is known as fedrated cluster and it can be achinved
+    using two things 1) cross cluster delivery 2) Sync resouce across cluster.
 --> 
