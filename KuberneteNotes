@@ -1,0 +1,21 @@
+--> Diff b/w kubernete and swarm
+    -> Swarm is the default cluster management provided by Docker and can handle only simple container only while Kbernetes can handle complex
+    container as well.
+--> Kubernetes Namespaces: The main task of namespace is to divide the clster resorce between multiple users.
+--> Pod : Pod is the one which multiple containers are running.
+--> Node in the Kuber is VM, physical machine.
+--> Heapster : It let us do the cluster monitoring.
+--> Kubelet : It is lowest level of component in Kubernetes and responsible for running each and every machines, also responsible
+    for communication b/w master and slave node.
+--> Minikube : It is used to run the container locally. And it runs a single node kubernete cluster.
+--> Kubectl : It is command line tool and use for sending command to cluster.
+--> Kubeproxy : Runs on each node and use for tcp/udp packgening and forwording.
+--> Kube-controller-manager : It will use to merge diff controller, for namespace creation, for garbage collectio.
+    Tupes of Controller : Node, Endpoint, Replication
+--> Load Balancing : It allows us to expose the services. Two types
+    Internal load balance : balance load autommatically and allocate pods based on required conf.
+    External load balance : Direct the traffic from external load to backend pod.
+--> Kubescheduler : The kube-scheduler has the job of assigning the nodes to the newly created pods.
+--> Kubernete cluster data stored inside the etcd folder.
+--> We can set a static IP for Kubernetes load balancer by changing the DNS records whenever Kubernetes Master assigns a new IP address.
+--> 
