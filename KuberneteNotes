@@ -1,6 +1,17 @@
+--> Diff b/w Kubernete and Swarm
+    -> GUI for kubernete is available but for swarm is not available
+    -> Kubernete can do autoscaling but not by swarm
+--> Kubernete is cluster management tool which is responsible for cluster deployent, scaling, descaling.
+--> Docker is used to create the container while Kubernete is used for communication b/w the container.
+--> Container Orchastration : If microservice put in the diff diff contaier then this container orchastration is responsible for the 
+    communication between this containers.
+--> Feature of Kubernete :      
+    Auto Scheduling
+    Automated rollout roll back
 --> Diff b/w kubernete and swarm
     -> Swarm is the default cluster management provided by Docker and can handle only simple container only while Kbernetes can handle complex
     container as well.
+--> Node in the Kubernete is the main worker machine.
 --> Kubernetes Namespaces: The main task of namespace is to divide the clster resorce between multiple users.
 --> Pod : Pod is the one which multiple containers are running.
 --> Node in the Kuber is VM, physical machine.
