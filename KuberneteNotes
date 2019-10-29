@@ -9,7 +9,7 @@
     for communication b/w master and slave node.
 --> Minikube : It is used to run the container locally. And it runs a single node kubernete cluster.
 --> Kubectl : It is command line tool and use for sending command to cluster.
---> Kubeproxy : Runs on each node and use for tcp/udp packgening and forwording.
+--> Kubeproxy : Runs on each node and use for tcp/udp packgening and forwording on backend networks.
 --> Kube-controller-manager : It will use to merge diff controller, for namespace creation, for garbage collectio.
     Tupes of Controller : Node, Endpoint, Replication
 --> Load Balancing : It allows us to expose the services. Two types
@@ -18,4 +18,22 @@
 --> Kubescheduler : The kube-scheduler has the job of assigning the nodes to the newly created pods.
 --> Kubernete cluster data stored inside the etcd folder.
 --> We can set a static IP for Kubernetes load balancer by changing the DNS records whenever Kubernetes Master assigns a new IP address.
+--> Componenets of Kubernetes : 
+    -> Master Node : kube-controller-manager, kube-apiserver, kubescheduller
+    -> Slave Node : kubelet , kuberproxy
+--> Kube-api server : Follows the scaleout architecture and responsible for establishing connection b/w Kubernetes node and master node.
+--> Types of service in Kubernetes :
+       Cluster Ip: Expose the service on cluster port
+       Node Port : Expose the port to node 
+       Loadbalance : Expose the service externally 
+       External Name :
+--> Ingress Network: It is a set of rules that act as an entry point to Kubernete cluster.
+--> Resource monitering : Kubernetes create the abstration at diff level like container, pods, service, and whole cluuster for resorce 
+    monitering.
+    Methods for Resource mmonitering : Proethuse, Grafana, CAdviser
+--> Repica set and Replication Controller both are used for nummber of pod replica are running but the difference between them is the usage
+    of selectors
+    Replica Set use equity based selectors : It allow the filteing by labelkey and value
+    Replication Controller use Selector based selectors : In this allow the filtering keys according to set of values.
+--> Headless Service : It is a normal Service withot the clster ip and ypu can directly reach to the pods withot the need to access throgh a proxy
 --> 
