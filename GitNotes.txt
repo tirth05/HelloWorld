@@ -17,7 +17,7 @@ Use commands given on official website in linux terminal.
 --> git is version comtrol tool/source code management tool.
 --> Git is decentralize vesrion toll and SVn is centralized. Offline commit is possible in git but not in SVN
 --> Git uses C lang.
---> bare repo : It containes an info of version control, conetent of .git sub dire in main directory.
+--> bare repo : Is is used when you are working on project from diff comps. It contains the version history of your code.
 --> Conflict in GIT : When two diff branch do the edit or delete in same repo or file.
 --> git revert commit_id
 --> SubGIT: Is a tool for SVN to GIT migration
@@ -39,5 +39,15 @@ Use commands given on official website in linux terminal.
 	git branch --no-merged
 --> git revert : It will do a that undoes the changes from previous commit
     git reset :  It modifies the index (the so-called "staging area"). Or it changes which commit a branch head is currently pointing at
---> Git rebase is use to copy changes from one branch to another.
+--> Git rebase is use to copy changes from one branch to another. Also another way of merging
     gir merge : It is the way of merging multiple barnch in single branch
+--> git head : It is reference to commit object. master head is default one and you can create any number of head.
+--> Branching : You can create your own brnaches and jump b/w those branches. 
+	-> In branching standard way is maintain one as Main branch and create another to add new feature int it. And to copy the result 	    in main branch use "git merge" or "git pull"
+	-> To delete branch use “git branch –d [head]”
+--> 'git remote add’  just creates an entry in your git config that specifies a name for a particular URL.
+--> git rm : To remove the file from stagin area it is used
+--> git reset : It will reset your workking dir as well as index to last commit
+--> To fix the broken commit use.
+	git command --amend
+--> 
