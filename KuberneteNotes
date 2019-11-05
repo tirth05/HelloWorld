@@ -23,6 +23,9 @@
 --> Kubeproxy : Runs on each node and use for tcp/udp packgening and forwording on backend networks.
 --> Kube-controller-manager : It will use to merge diff controller, for namespace creation, for garbage collectio.
     Tupes of Controller : Node, Endpoint, Replication
+--> API Server : It is use to validate the configuration data stored in etcd and the details of deployed cluster such as cluster state.
+--> Volume : It is a dorectory accessible to all container running in the pod.
+--> Persistent Volumes : It is a peice of storage in Kubernete cluster. It's like a volume plugins like volume.
 --> Load Balancing : It allows us to expose the services. Two types
     Internal load balance : balance load autommatically and allocate pods based on required conf.
     External load balance : Direct the traffic from external load to backend pod.
@@ -59,4 +62,18 @@
 --> Deployment: It is common workload which can be directly created and managed. It uses Replication Set as building block which add 
     feature of life cycle management.
 --> Daemon Set: It is an another set of Pod controller which run the copy of the Pod on every node. 
---> 
+--> To attach things to running cont.
+    kubectl attach <pod> -f <cont.>
+--> To see cluster info
+    kubectl cluster info
+--> To create the resource 
+    kubectl create -f <filename>
+    To dlt resource
+    kubectl delete -f <filename>
+    To describe any perticular resource
+    kubectl describe -f <filename>
+--> To expose any Kubernetes object like Pod,replication controller etc
+    kubectl expose
+--> To get the logs of the container running in pod
+    kubectl logs
+--> To scale 
