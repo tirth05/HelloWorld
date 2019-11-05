@@ -49,4 +49,14 @@
 --> Headless Service : It is a normal Service withot the clster ip and ypu can directly reach to the pods withot the need to access throgh a proxy
 --> Fedrated Cluster : Multiple kubernete cluster can be created and managed toagather is known as fedrated cluster and it can be achinved
     using two things 1) cross cluster delivery 2) Sync resouce across cluster.
+--> ETCD : It store the configuration details and wright values.
+--> Worker/Slave node : It contains the required services to manage the netwokring between containers and commnicate with mmaster which
+    allows you to assign a resurce to scheduled cntainers.
+--> Replication Controller : It is an object which defines the pod template. It also control the parameter to scale the identical replica
+    of Pod.
+--> Replication Set : It is an interation on replication controller design with flexibility that find how the controller recongnize the
+    pod it is meant to manage.
+--> Deployment: It is common workload which can be directly created and managed. It uses Replication Set as building block which add 
+    feature of life cycle management.
+--> Daemon Set: It is an another set of Pod controller which run the copy of the Pod on every node. 
 --> 
