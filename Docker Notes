@@ -1,0 +1,8 @@
+--> Hyperviser : It is the one that is make the virtulization possible.
+--> Docker architecture: docker daemon, A RestAPI, Docker CLI
+--> Docker Compose: It is a YAML file which include the services, network, volummes for setting up the docker app.
+--> Docker machine - It is machine which let you install docker engine on virtual host.
+--> You can not remove the paused container in Docker. Container need to be stopped first.
+--> docker stats : Provide the CPU and memory storage used by container.
+    docker events : Provide the information about the event taking place in docker daemon
+--> 
