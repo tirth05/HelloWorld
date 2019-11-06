@@ -1,10 +1,14 @@
 --> Diff b/w Kubernete and Swarm
     -> GUI for kubernete is available but for swarm is not available
     -> Kubernete can do autoscaling but not by swarm
---> Kubernete is cluster management tool which is responsible for cluster deployent, scaling, descaling.
+    -> Load balancing is tough in kubernter while in swarm automatically
+    -> Rollback does auto rollback bt not in swarm
+    -> Im buit tool for logging in Kubernetes but not in Swarm
+--> Kubernete is cluster management tool which is responsible for cluster deployent, scaling, descaling. 
 --> Docker is used to create the container while Kubernete is used for communication b/w the container.
 --> Container Orchastration : If microservice put in the diff diff contaier then this container orchastration is responsible for the 
     communication between this containers.
+--> Google container Engine : It is container orchastation and management tool which is totally based on Kubernetes.
 --> Feature of Kubernete :      
     Auto Scheduling
     Automated rollout roll back
@@ -14,11 +18,11 @@
 --> Node in the Kubernete is the main worker machine.
 --> Kubernetes Namespaces: The main task of namespace is to divide the clster resorce between multiple users.
 --> Pod : Pod is the one which multiple containers are running.
---> Node in the Kuber is VM, physical machine.
---> Heapster : It let us do the cluster monitoring.
---> Kubelet : It is lowest level of component in Kubernetes and responsible for running each and every machines, also responsible
-    for communication b/w master and slave node.
---> Minikube : It is used to run the container locally. And it runs a single node kubernete cluster.
+--> Node in the Kuber is VM, physical machine. Nodes provide the services to run the Pod on it. And this nodes are manages by Master. 
+--> Heapster : It is a performance moniterning and matric colletion supported by kubernetes and it is open source.
+--> Kubelet : It is lowest level of component in Kubernetes and responsible for running each and every slave machines, also responsible
+    for communication b/w master and slave node. Kubelete runs on the basis of pods specification. 
+--> Minikube : It is used to run the Kubernetes locally. And it runs a single node kubernete cluster.
 --> Kubectl : It is command line tool and use for sending command to cluster.
 --> Kubeproxy : Runs on each node and use for tcp/udp packgening and forwording on backend networks.
 --> Kube-controller-manager : It will use to merge diff controller, for namespace creation, for garbage collectio.
