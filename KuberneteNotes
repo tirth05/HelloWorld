@@ -24,39 +24,43 @@
     for communication b/w master and slave node. Kubelete runs on the basis of pods specification. 
 --> Minikube : It is used to run the Kubernetes locally. And it runs a single node kubernete cluster.
 --> Kubectl : It is command line tool and use for sending command to cluster.
---> Kubeproxy : Runs on each node and use for tcp/udp packgening and forwording on backend networks.
---> Kube-controller-manager : It will use to merge diff controller, for namespace creation, for garbage collectio.
-    Tupes of Controller : Node, Endpoint, Replication
---> API Server : It is use to validate the configuration data stored in etcd and the details of deployed cluster such as cluster state.
---> Volume : It is a dorectory accessible to all container running in the pod.
---> Persistent Volumes : It is a peice of storage in Kubernete cluster. It's like a volume plugins like volume.
---> Load Balancing : It allows us to expose the services. Two types
-    Internal load balance : balance load autommatically and allocate pods based on required conf.
-    External load balance : Direct the traffic from external load to backend pod.
---> Kubescheduler : The kube-scheduler has the job of assigning the nodes to the newly created pods.
---> Kubernete cluster data stored inside the etcd folder.
---> We can set a static IP for Kubernetes load balancer by changing the DNS records whenever Kubernetes Master assigns a new IP address.
 --> Componenets of Kubernetes : 
     -> Master Node : kube-controller-manager, kube-apiserver, kubescheduller
     -> Slave Node : kubelet , kuberproxy
---> Kube-api server : Follows the scaleout architecture and responsible for establishing connection b/w Kubernetes node and master node.
+--> Master Node : It is responsible to control nodes.
+--> Kube-controller-manager : It will use to compile diff controller services, for namespace creation, for garbage collectio.
+    Tupes of Controller : Node, Endpoint, Replication
+--> Kubeproxy : Runs on each node. It define the Network rules on the nodes and this rules allow you to communicate to your pods.
+    Use for tcp/udp packgening and forwording on backend networks.
+--> Kube-api server : It is use to validate the configuration data stored in etcd and the details of deployed cluster such as cluster state.
+    and responsible for establishing connection b/w Kubernetes node and master node.
+--> Kubescheduler : The kube-scheduler has the job of assigning the nodes to the newly created pods. Means responsible for distribution 
+    of the workload on worker node.
+--> ETCD : It store the configuration details and wright values. It is a type of database to store configuration info. 
+--> Volume : It is a dorectory accessible to all container running in the pod.
+--> Persistent Volumes : It is a peice of storage in Kubernete cluster. It's like a volume plugins like volume.
+
+--> We can set a static IP for Kubernetes load balancer by changing the DNS records whenever Kubernetes Master assigns a new IP address.
 --> Types of service in Kubernetes :
-       Cluster Ip: Expose the service on cluster port
+       Cluster Ip: Expose the service on cluster port inside the cluste. 
        Node Port : Expose the port to node 
        Loadbalance : Expose the service externally 
        External Name :
---> Ingress Network: It is a set of rules that act as an entry point to Kubernete cluster.
+--> Load Balancing : It allows us to expose the services. Two types
+    Internal load balance : balance load autommatically and allocate pods based on required conf.
+    External load balance : Direct the traffic from external load to backend pod. 
+--> Ingress Network: It is a set of rules that act as an entry point to Kubernete cluster. And it provide the access to service 
+       through HTTP request so it is more secure. It is all about routing.  
 --> Resource monitering : Kubernetes create the abstration at diff level like container, pods, service, and whole cluuster for resorce 
     monitering.
     Methods for Resource mmonitering : Proethuse, Grafana, CAdviser
 --> Repica set and Replication Controller both are used for nummber of pod replica are running but the difference between them is the usage
     of selectors
-    Replica Set use equity based selectors : It allow the filteing by labelkey and value
-    Replication Controller use Selector based selectors : In this allow the filtering keys according to set of values.
+    Replication Controller use equity based selectors : It allow the filteing by labelkey and value
+    Replica Set use Set based selectors : Where you can define proper set.
 --> Headless Service : It is a normal Service withot the clster ip and ypu can directly reach to the pods withot the need to access throgh a proxy
 --> Fedrated Cluster : Multiple kubernete cluster can be created and managed toagather is known as fedrated cluster and it can be achinved
     using two things 1) cross cluster delivery 2) Sync resouce across cluster.
---> ETCD : It store the configuration details and wright values.
 --> Worker/Slave node : It contains the required services to manage the netwokring between containers and commnicate with mmaster which
     allows you to assign a resurce to scheduled cntainers.
 --> Replication Controller : It is an object which defines the pod template. It also control the parameter to scale the identical replica
