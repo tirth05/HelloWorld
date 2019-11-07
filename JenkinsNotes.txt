@@ -11,7 +11,7 @@ It is so modular that we can solve the problem at any time.
 --> systemctl status/start/restart/stop jenkins
 --> Build Trigger
 	--> Build Periodecally(Using Croning) :- To build a job periodically.  
-	--> Trigger build periodically :- Using authentication Token and it is used to trigger a build remotely.
+	--> Trigger build Remotely :- Using authentication Token and it is used to trigger a build remotely.
 	--> Poll SCM :- Work same as Build periodically but every time it check the Git repositery and check
 		any new commit happen if it happens then it will build the JOb again.
 --> Build Enviroment 
